@@ -49,8 +49,8 @@
     "jsii-pacmak": "^1.20.1",
     "json-schema": "^0.3.0",
     "prettier": "^2.2.1",
-    "projen": "^0.16.5",
-    "standard-version": "^9.0.0",
+    "projen": "^0.16.42",
+    "standard-version": "^9",
     "ts-jest": "^26.5.1",
     "typescript": "^3.9.5"
   },
@@ -65,7 +65,7 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
   },

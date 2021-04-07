@@ -9,7 +9,7 @@ export interface AnalysisTemplate {
 
 export interface ValueFrom {
   readonly podTemplateHashValue?: string;
-  readonly fieldRef?: k8s.ObjectFieldSelector
+  readonly fieldRef?: k8s.ObjectFieldSelector;
 }
 
 export interface AnalysisArgs {
@@ -27,8 +27,8 @@ export interface AnalysisSpec {
 //   setWeight: number;
 // } | {
 //   pause: { duration?: string }
-// } | { 
-//   setCanaryScale: { 
+// } | {
+//   setCanaryScale: {
 //     replicas: number
 //   } | {
 //     weight: number
@@ -42,13 +42,13 @@ export interface AnalysisSpec {
 //     duration: string;
 //     templates: { name: string; specRef: string }[];
 //     analyses: { name: string; templateName: string }[];
-//   } 
+//   }
 // };
 
 export interface BlueGreenStrategySpecs {
   readonly activeService: string;
-  readonly prePromotionAnalysis?: AnalysisSpec,
-  readonly postPromotionAnalysis?: AnalysisSpec,
+  readonly prePromotionAnalysis?: AnalysisSpec;
+  readonly postPromotionAnalysis?: AnalysisSpec;
   readonly previewService?: string;
   readonly previewReplicaCount?: number;
   readonly autoPromotionEnabled?: boolean;
