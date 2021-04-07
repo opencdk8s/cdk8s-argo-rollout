@@ -4,7 +4,7 @@ const project = new ConstructLibraryCdk8s({
   author: 'Sumit Agarwal',
   authorAddress: 'sa.sumit@outlook.com',
   cdk8sVersion: '1.0.0-beta.8',
-  defaultReleaseBranch: 'master',
+  defaultReleaseBranch: 'development',
   stability: 'experimental',
   jsiiFqn: 'projen.ConstructLibraryCdk8s',
   name: '@opencdk8s/cdk8s-argo-rollout',
@@ -35,7 +35,7 @@ const project = new ConstructLibraryCdk8s({
 
   dependabot: false,
   pullRequestTemplate: false,
-  releaseBranches: ['master'],
+  releaseBranches: ['development'],
   codeCov: true,
   clobber: false,
   readme: true,
