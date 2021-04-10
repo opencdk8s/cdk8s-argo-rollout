@@ -1,79 +1,9 @@
-# cdk8s-aws-lb-controller-api-object
+# cdk8s-argo-rollouts
 
-![Release](https://github.com/opencdk8s/cdk8s-aws-lb-controller-api-object/workflows/Release/badge.svg?branch=development)
-[![npm version](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-aws-lb-controller-api-object.svg)](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-aws-lb-controller-api-object)
-[![PyPI version](https://badge.fury.io/py/cdk8s-aws-lb-controller-api-object.svg)](https://badge.fury.io/py/cdk8s-aws-lb-controller-api-object)
-![npm](https://img.shields.io/npm/dt/@opencdk8s/cdk8s-aws-lb-controller-api-object?label=npm&color=green) 
-
-API Object for AWS Load Balancer Controller, powered by the [cdk8s project](https://cdk8s.io) and [aws-load-balancer-controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller)  🚀
-
-## Overview 
-
-```typescript
-import { Construct } from 'constructs';
-import { App, Chart, ChartProps } from 'cdk8s';
-import { AWSLoadBalancerControllerObject } from '@opencdk8s/cdk8s-aws-lb-controller-api-object'
-
-
-export class MyChart extends Chart {
-  constructor(scope: Construct, id: string, props: ChartProps = { }) {
-    super(scope, id, props);
-    new AWSLoadBalancerControllerObject(this, 'example', {
-      metadata: {
-        annotations: {
-          'kubernetes.io/ingress.class': 'alb',
-        }
-      },
-      spec: {
-        rules: [{
-          host: "example.com",
-          http: {
-            paths: [{
-              path: '/*',
-              backend: {
-                serviceName: 'helloworld-svc',
-                servicePort: 80
-              }
-            }]
-          }
-        }]
-      }
-    })
-
-    }
-}
-
-const app = new App();
-new MyChart(app, 'example');
-app.synth();
-```
-
-Example `cdk8s synth` manifest as follows.
-
-<details>
-<summary>manifest.k8s.yaml</summary>
-
-```yaml
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  annotations:
-    kubernetes.io/ingress.class: alb
-  name: example-c89c1904
-spec:
-  rules:
-    - host: example.com
-      http:
-        paths:
-          - backend:
-              serviceName: helloworld-svc
-              servicePort: 80
-            path: /*
-
-
-```
-
-</details>
+![Release](https://github.com/opencdk8s/cdk8s-argo-rollouts/workflows/Release/badge.svg?branch=master)
+[![npm version](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollouts.svg)](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollouts)
+[![PyPI version](https://badge.fury.io/py/cdk8s-argo-rollouts.svg)](https://badge.fury.io/py/cdk8s-argo-rollouts)
+![npm](https://img.shields.io/npm/dt/@opencdk8s/cdk8s-argo-rollouts?label=npm&color=green) 
 
 ## Installation
 
@@ -82,21 +12,21 @@ spec:
 Use `yarn` or `npm` to install.
 
 ```sh
-$ npm install @opencdk8s/cdk8s-aws-lb-controller-api-objects
+$ npm install @opencdk8s/cdk8s-argo-rollouts
 ```
 
 ```sh
-$ yarn add @opencdk8s/cdk8s-aws-lb-controller-api-objects
+$ yarn add @opencdk8s/cdk8s-argo-rollouts
 ```
 
 ### Python
 
 ```sh
-$ pip install cdk8s-aws-lb-controller-api-objects
+$ pip install cdk8s-argo-rollouts
 ```
 ## Contribution
 
-1. Fork ([link](https://github.com/opencdk8s/cdk8s-aws-lb-controller-api-objects/fork))
+1. Fork ([link](https://github.com/opencdk8s/cdk8s-argo-rollouts/fork))
 2. Bootstrap the repo:
   
     ```bash
@@ -125,4 +55,4 @@ $ pip install cdk8s-aws-lb-controller-api-objects
 
 ## Author
 
-[Hunter-Thompson](https://github.com/Hunter-Thompson)
+[Sumit Agarwal](https://github.com/agarwal-sumit)
