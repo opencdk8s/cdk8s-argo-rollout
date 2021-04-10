@@ -1,9 +1,9 @@
-# cdk8s-argo-rollouts
+# cdk8s-argo-rollout
 
-![Release](https://github.com/opencdk8s/cdk8s-argo-rollouts/workflows/Release/badge.svg?branch=master)
-[![npm version](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollouts.svg)](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollouts)
-[![PyPI version](https://badge.fury.io/py/cdk8s-argo-rollouts.svg)](https://badge.fury.io/py/cdk8s-argo-rollouts)
-![npm](https://img.shields.io/npm/dt/@opencdk8s/cdk8s-argo-rollouts?label=npm&color=green) 
+![Release](https://github.com/opencdk8s/cdk8s-argo-rollout/workflows/Release/badge.svg?branch=master)
+[![npm version](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollout.svg)](https://badge.fury.io/js/%40opencdk8s%2Fcdk8s-argo-rollout)
+[![PyPI version](https://badge.fury.io/py/cdk8s-argo-rollout.svg)](https://badge.fury.io/py/cdk8s-argo-rollout)
+![npm](https://img.shields.io/npm/dt/@opencdk8s/cdk8s-argo-rollout?label=npm&color=green) 
 
 ## Installation
 
@@ -12,21 +12,21 @@
 Use `yarn` or `npm` to install.
 
 ```sh
-$ npm install @opencdk8s/cdk8s-argo-rollouts
+$ npm install @opencdk8s/cdk8s-argo-rollout
 ```
 
 ```sh
-$ yarn add @opencdk8s/cdk8s-argo-rollouts
+$ yarn add @opencdk8s/cdk8s-argo-rollout
 ```
 
 ### Python
 
 ```sh
-$ pip install cdk8s-argo-rollouts
+$ pip install cdk8s-argo-rollout
 ```
 ## Contribution
 
-1. Fork ([link](https://github.com/opencdk8s/cdk8s-argo-rollouts/fork))
+1. Fork ([link](https://github.com/opencdk8s/cdk8s-argo-rollout/fork))
 2. Bootstrap the repo:
   
     ```bash
