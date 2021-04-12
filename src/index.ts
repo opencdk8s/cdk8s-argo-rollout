@@ -55,7 +55,7 @@ export interface BlueGreenStrategySpecs {
   readonly autoPromotionSeconds?: number;
   readonly scaleDownDelaySeconds?: number;
   readonly scaleDownDelayRevisionLimit?: number;
-  readonly antiAffinity: k8s.PodAntiAffinity;
+  readonly antiAffinity?: k8s.PodAntiAffinity;
 }
 
 // export interface CanaryStrategySpecs {
