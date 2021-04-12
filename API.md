@@ -10409,7 +10409,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **activeService**🔹 | <code>string</code> | <span></span>
-**antiAffinity**🔹 | <code>[k8s.PodAntiAffinity](#opencdk8s-cdk8s-argo-rollout-k8s-podantiaffinity)</code> | <span></span>
+**antiAffinity**?🔹 | <code>[k8s.PodAntiAffinity](#opencdk8s-cdk8s-argo-rollout-k8s-podantiaffinity)</code> | __*Optional*__
 **autoPromotionEnabled**?🔹 | <code>boolean</code> | __*Optional*__
 **autoPromotionSeconds**?🔹 | <code>number</code> | __*Optional*__
 **postPromotionAnalysis**?🔹 | <code>[AnalysisSpec](#opencdk8s-cdk8s-argo-rollout-analysisspec)</code> | __*Optional*__
