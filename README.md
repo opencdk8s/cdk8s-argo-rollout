@@ -30,8 +30,9 @@ $ pip install cdk8s-argo-rollout
 2. Bootstrap the repo:
   
     ```bash
-    npx projen   # generates package.json 
     yarn install # installs dependencies
+    npx projen  
+
     ```
 3. Development scripts:
    |Command|Description
