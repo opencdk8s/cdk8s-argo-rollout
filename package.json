@@ -122,7 +122,9 @@
         "distName": "cdk8s-argo-rollout",
         "module": "cdk8s_argo_rollout"
       },
-      "go": {}
+      "go": {
+        "moduleName": "github.com/opencdk8s/cdk8s-argo-rollouts-go"
+      }
     },
     "tsc": {
       "outDir": "lib",
