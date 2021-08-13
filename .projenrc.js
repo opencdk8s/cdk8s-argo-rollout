@@ -24,7 +24,7 @@ const project = new ConstructLibraryCdk8s({
   publishToGo: {
     gitUserName: 'Hunter-Thompson',
     gitUserEmail: 'aatman@auroville.org.in',
-    moduleName: 'github.com/opencdk8s/cdk8s-argo-rollouts-go'
+    moduleName: 'github.com/opencdk8s/cdk8s-argo-rollouts-go',
   },
   dependabot: false,
   pullRequestTemplate: false,
