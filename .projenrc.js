@@ -17,7 +17,7 @@ const project = new ConstructLibraryCdk8s({
     distName: 'cdk8s-argo-rollout',
     module: 'cdk8s_argo_rollout',
   },
-  releaseEveryCommit: false,
+  releaseEveryCommit: true,
   devDeps: [
     'prettier@^2.2.1',
   ],
