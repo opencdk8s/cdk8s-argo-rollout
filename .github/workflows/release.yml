@@ -113,7 +113,7 @@ jobs:
         run: npx -p jsii-release@latest jsii-release-golang
         env:
           GIT_USER_NAME: Hunter-Thompson
-          GIT_USER_EMAIL: github-actions@github.com
+          GIT_USER_EMAIL: aatman@auroville.org.in
           GITHUB_TOKEN: ${{ secrets.GO_GITHUB_TOKEN }}
     container:
       image: jsii/superchain
