@@ -17,12 +17,14 @@ const project = new ConstructLibraryCdk8s({
     distName: 'cdk8s-argo-rollout',
     module: 'cdk8s_argo_rollout',
   },
-  releaseEveryCommit: false,
+  releaseEveryCommit: true,
   devDeps: [
     'prettier@^2.2.1',
   ],
   publishToGo: {
     gitUserName: 'Hunter-Thompson',
+    gitUserEmail: 'aatman@auroville.org.in',
+    moduleName: 'github.com/opencdk8s/cdk8s-argo-rollouts-go',
   },
   dependabot: false,
   pullRequestTemplate: false,
