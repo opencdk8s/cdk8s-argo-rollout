@@ -38,9 +38,9 @@
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
-    "cdk8s": "1.0.0-beta.24",
-    "cdk8s-plus-17": "1.0.0-beta.28",
-    "constructs": "3.3.80",
+    "cdk8s": "1.0.0-beta.27",
+    "cdk8s-plus-17": "1.0.0-beta.50",
+    "constructs": "3.3.120",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -60,9 +60,9 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdk8s": "^1.0.0-beta.24",
-    "cdk8s-plus-17": "^1.0.0-beta.28",
-    "constructs": "^3.3.80"
+    "cdk8s": "^1.0.0-beta.27",
+    "cdk8s-plus-17": "^1.0.0-beta.50",
+    "constructs": "^3.3.120"
   },
   "bundledDependencies": [],
   "keywords": [

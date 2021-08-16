@@ -3,9 +3,9 @@ const { ConstructLibraryCdk8s } = require('projen');
 const project = new ConstructLibraryCdk8s({
   author: 'Sumit Agarwal',
   authorAddress: 'sa.sumit@outlook.com',
-  cdk8sVersion: '1.0.0-beta.24',
-  cdk8sPlusVersion: '1.0.0-beta.28',
-  constructsVersion: '3.3.80',
+  cdk8sVersion: '1.0.0-beta.27',
+  cdk8sPlusVersion: '1.0.0-beta.50',
+  constructsVersion: '3.3.120',
   defaultReleaseBranch: 'master',
   stability: 'experimental',
   jsiiFqn: 'projen.ConstructLibraryCdk8s',
