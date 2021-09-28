@@ -36,8 +36,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^10.17.0",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "cdk8s": "1.0.0-beta.27",
     "cdk8s-plus-17": "1.0.0-beta.50",
     "constructs": "3.3.120",
