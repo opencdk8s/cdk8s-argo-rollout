@@ -5,27 +5,28 @@
     "url": "https://github.com/opencdk8s/cdk8s-argo-rollout"
   },
   "scripts": {
-    "compile": "npx projen compile",
-    "test:compile": "npx projen test:compile",
-    "test": "npx projen test",
     "build": "npx projen build",
-    "test:watch": "npx projen test:watch",
-    "test:update": "npx projen test:update",
     "bump": "npx projen bump",
-    "unbump": "npx projen unbump",
-    "publish:github": "npx projen publish:github",
-    "upgrade": "npx projen upgrade",
-    "upgrade-projen": "npx projen upgrade-projen",
-    "default": "npx projen default",
-    "watch": "npx projen watch",
-    "package": "npx projen package",
-    "eslint": "npx projen eslint",
     "compat": "npx projen compat",
+    "compile": "npx projen compile",
+    "default": "npx projen default",
+    "docgen": "npx projen docgen",
+    "eslint": "npx projen eslint",
+    "package": "npx projen package",
+    "post-compile": "npx projen post-compile",
+    "pre-compile": "npx projen pre-compile",
+    "publish:github": "npx projen publish:github",
+    "publish:golang": "npx projen publish:golang",
     "publish:npm": "npx projen publish:npm",
     "publish:pypi": "npx projen publish:pypi",
-    "publish:golang": "npx projen publish:golang",
-    "docgen": "npx projen docgen",
     "release": "npx projen release",
+    "test": "npx projen test",
+    "test:update": "npx projen test:update",
+    "test:watch": "npx projen test:watch",
+    "unbump": "npx projen unbump",
+    "upgrade": "npx projen upgrade",
+    "upgrade-projen": "npx projen upgrade-projen",
+    "watch": "npx projen watch",
     "projen": "npx projen"
   },
   "author": {
@@ -35,12 +36,11 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
-    "@types/node": "^10.17.0",
+    "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
-    "cdk8s": "1.0.0-beta.27",
-    "cdk8s-plus-17": "1.0.0-beta.50",
-    "constructs": "3.3.120",
+    "cdk8s": "1.2.0",
+    "constructs": "3.3.161",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -54,15 +54,14 @@
     "json-schema": "^0.3.0",
     "npm-check-updates": "^11",
     "prettier": "^2.2.1",
-    "projen": "^0.27.28",
+    "projen": "^0.36.0",
     "standard-version": "^9",
     "ts-jest": "^26.5.6",
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdk8s": "^1.0.0-beta.27",
-    "cdk8s-plus-17": "^1.0.0-beta.50",
-    "constructs": "^3.3.120"
+    "cdk8s": "^1.2.0",
+    "constructs": "^3.3.161"
   },
   "bundledDependencies": [],
   "keywords": [
@@ -109,7 +108,7 @@
     "preset": "ts-jest",
     "globals": {
       "ts-jest": {
-        "tsconfig": "tsconfig.jest.json"
+        "tsconfig": "tsconfig.dev.json"
       }
     }
   },
