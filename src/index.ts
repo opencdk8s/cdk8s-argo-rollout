@@ -102,7 +102,7 @@ export class ArgoRollout extends ApiObject {
   public static readonly GVK: GroupVersionKind = {
     apiVersion: 'argoproj.io/v1alpha1',
     kind: 'Rollout',
-  }
+  };
   /**
    * Renders a Kubernetes manifest for an ingress object. https://github.com/kubernetes-sigs/aws-load-balancer-controller
    *

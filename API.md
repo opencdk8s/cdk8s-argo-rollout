@@ -596,7 +596,7 @@ Name|Description
 
 
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Extends__: [ApiObject](#cdk8s-apiobject)
 
 ### Initializer
@@ -689,7 +689,7 @@ APIService represents a server for a particular GroupVersion.
 
 Name must be "version.group".
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -744,7 +744,7 @@ __Returns__:
 
 APIServiceList is a list of APIService objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -799,7 +799,7 @@ __Returns__:
 
 APIServiceList is a list of APIService objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -856,7 +856,7 @@ APIService represents a server for a particular GroupVersion.
 
 Name must be "version.group".
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -911,7 +911,7 @@ __Returns__:
 
 AuditSinkList is a list of AuditSink items.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -966,7 +966,7 @@ __Returns__:
 
 AuditSink represents a cluster level audit sink.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1023,7 +1023,7 @@ Binding ties one object to another;
 
 for example, a pod is bound to a node by a scheduler. Deprecated in 1.7, please use the bindings subresource of pods instead.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1078,7 +1078,7 @@ __Returns__:
 
 
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1133,7 +1133,7 @@ __Returns__:
 
 Describes a certificate signing request.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1188,7 +1188,7 @@ __Returns__:
 
 ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1247,7 +1247,7 @@ ClusterRoleBinding references a ClusterRole, but not contain it.
 
 It can reference a ClusterRole in the global namespace, and adds who information via Subject.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1304,7 +1304,7 @@ __Returns__:
 
 ClusterRoleBindingList is a collection of ClusterRoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1359,7 +1359,7 @@ __Returns__:
 
 ClusterRoleBindingList is a collection of ClusterRoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1414,7 +1414,7 @@ __Returns__:
 
 ClusterRoleBindingList is a collection of ClusterRoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1471,7 +1471,7 @@ ClusterRoleBinding references a ClusterRole, but not contain it.
 
 It can reference a ClusterRole in the global namespace, and adds who information via Subject.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1530,7 +1530,7 @@ ClusterRoleBinding references a ClusterRole, but not contain it.
 
 It can reference a ClusterRole in the global namespace, and adds who information via Subject.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1587,7 +1587,7 @@ __Returns__:
 
 ClusterRoleList is a collection of ClusterRoles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1642,7 +1642,7 @@ __Returns__:
 
 ClusterRoleList is a collection of ClusterRoles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1697,7 +1697,7 @@ __Returns__:
 
 ClusterRoleList is a collection of ClusterRoles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1752,7 +1752,7 @@ __Returns__:
 
 ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1809,7 +1809,7 @@ __Returns__:
 
 ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1866,7 +1866,7 @@ __Returns__:
 
 ComponentStatus (and ComponentStatusList) holds the cluster validation info.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1921,7 +1921,7 @@ __Returns__:
 
 Status of all the conditions for the component as a list of ComponentStatus objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -1976,7 +1976,7 @@ __Returns__:
 
 ConfigMap holds configuration data for pods to consume.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2033,7 +2033,7 @@ __Returns__:
 
 ConfigMapList is a resource containing a list of ConfigMap objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2090,7 +2090,7 @@ ControllerRevision implements an immutable snapshot of state data.
 
 Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2147,7 +2147,7 @@ __Returns__:
 
 ControllerRevisionList is a resource containing a list of ControllerRevision objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2202,7 +2202,7 @@ __Returns__:
 
 ControllerRevisionList is a resource containing a list of ControllerRevision objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2257,7 +2257,7 @@ __Returns__:
 
 ControllerRevisionList is a resource containing a list of ControllerRevision objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2314,7 +2314,7 @@ DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1be
 
 See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2373,7 +2373,7 @@ DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1/C
 
 See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2430,7 +2430,7 @@ __Returns__:
 
 CronJobList is a collection of cron jobs.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2485,7 +2485,7 @@ __Returns__:
 
 CronJobList is a collection of cron jobs.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2540,7 +2540,7 @@ __Returns__:
 
 CronJob represents the configuration of a single cron job.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2595,7 +2595,7 @@ __Returns__:
 
 CronJob represents the configuration of a single cron job.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2650,7 +2650,7 @@ __Returns__:
 
 CSIDriverList is a collection of CSIDriver objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2707,7 +2707,7 @@ CSIDriver captures information about a Container Storage Interface (CSI) volume 
 
 CSI drivers do not need to create the CSIDriver object directly. Instead they may use the cluster-driver-registrar sidecar container. When deployed with a CSI driver it automatically creates a CSIDriver object representing the driver. Kubernetes attach detach controller uses this object to determine whether attach is required. Kubelet uses this object to determine whether pod information needs to be passed on mount. CSIDriver objects are non-namespaced.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2762,7 +2762,7 @@ __Returns__:
 
 CSINodeList is a collection of CSINode objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2819,7 +2819,7 @@ CSINode holds information about all CSI drivers installed on a node.
 
 CSI drivers do not need to create the CSINode object directly. As long as they use the node-driver-registrar sidecar container, the kubelet will automatically populate the CSINode object for the CSI driver as part of kubelet plugin registration. CSINode has the same name as a node. If the object is missing, it means either there are no CSI Drivers available on the node, or the Kubelet version is low enough that it doesn't create this object. CSINode has an OwnerReference that points to the corresponding node object.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2874,7 +2874,7 @@ __Returns__:
 
 CustomResourceDefinitionList is a list of CustomResourceDefinition objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2931,7 +2931,7 @@ CustomResourceDefinition represents a resource that should be exposed on the API
 
 Its name MUST be in the format <.spec.name>.<.spec.group>.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -2986,7 +2986,7 @@ __Returns__:
 
 DaemonSet represents the configuration of a daemon set.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3041,7 +3041,7 @@ __Returns__:
 
 DaemonSetList is a collection of daemon sets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3096,7 +3096,7 @@ __Returns__:
 
 DaemonSetList is a collection of daemon sets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3151,7 +3151,7 @@ __Returns__:
 
 DaemonSetList is a collection of daemon sets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3208,7 +3208,7 @@ DEPRECATED - This group version of DaemonSet is deprecated by apps/v1beta2/Daemo
 
 See the release notes for more information. DaemonSet represents the configuration of a daemon set.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3265,7 +3265,7 @@ DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet.
 
 See the release notes for more information. DaemonSet represents the configuration of a daemon set.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3320,7 +3320,7 @@ __Returns__:
 
 Deployment enables declarative updates for Pods and ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3375,7 +3375,7 @@ __Returns__:
 
 DeploymentList is a list of Deployments.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3430,7 +3430,7 @@ __Returns__:
 
 DeploymentList is a list of Deployments.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3485,7 +3485,7 @@ __Returns__:
 
 DeploymentList is a list of Deployments.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3542,7 +3542,7 @@ DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Depl
 
 See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3599,7 +3599,7 @@ DEPRECATED - This group version of Deployment is deprecated by apps/v1/Deploymen
 
 See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3667,7 +3667,7 @@ Subsets: [
   },
 ]
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3722,7 +3722,7 @@ __Returns__:
 
 EndpointsList is a list of endpoints.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3777,7 +3777,7 @@ __Returns__:
 
 Event is a report of an event somewhere in the cluster.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3858,7 +3858,7 @@ __Returns__:
 
 EventList is a list of events.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3913,7 +3913,7 @@ __Returns__:
 
 EventList is a list of Event objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -3970,7 +3970,7 @@ Event is a report of an event somewhere in the cluster.
 
 It generally denotes some state change in the system.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4053,7 +4053,7 @@ Eviction evicts a pod from its node subject to certain policies and safety const
 
 This is a subresource of Pod.  A request to cause such an eviction is created by POSTing to .../pods/<pod name>/evictions.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4108,7 +4108,7 @@ __Returns__:
 
 configuration of a horizontal pod autoscaler.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4163,7 +4163,7 @@ __Returns__:
 
 list of horizontal pod autoscaler objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4218,7 +4218,7 @@ __Returns__:
 
 HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4273,7 +4273,7 @@ __Returns__:
 
 HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4328,7 +4328,7 @@ __Returns__:
 
 HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4383,7 +4383,7 @@ __Returns__:
 
 HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4438,7 +4438,7 @@ __Returns__:
 
 IngressList is a collection of Ingress.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4495,7 +4495,7 @@ Ingress is a collection of rules that allow inbound connections to reach the end
 
 An Ingress can be configured to give services externally-reachable urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4550,7 +4550,7 @@ __Returns__:
 
 Job represents the configuration of a single job.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4605,7 +4605,7 @@ __Returns__:
 
 JobList is a collection of jobs.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4660,7 +4660,7 @@ __Returns__:
 
 Lease defines a lease concept.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4715,7 +4715,7 @@ __Returns__:
 
 LeaseList is a list of Lease objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4770,7 +4770,7 @@ __Returns__:
 
 LeaseList is a list of Lease objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4825,7 +4825,7 @@ __Returns__:
 
 Lease defines a lease concept.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4880,7 +4880,7 @@ __Returns__:
 
 LimitRange sets resource usage limits for each kind of resource in a Namespace.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4935,7 +4935,7 @@ __Returns__:
 
 LimitRangeList is a list of LimitRange items.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -4992,7 +4992,7 @@ LocalSubjectAccessReview checks whether or not a user or group can perform an ac
 
 Having a namespace scoped resource makes it much easier to grant namespace scoped policy that includes permissions checking.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5049,7 +5049,7 @@ LocalSubjectAccessReview checks whether or not a user or group can perform an ac
 
 Having a namespace scoped resource makes it much easier to grant namespace scoped policy that includes permissions checking.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5104,7 +5104,7 @@ __Returns__:
 
 MutatingWebhookConfigurationList is a list of MutatingWebhookConfiguration.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5159,7 +5159,7 @@ __Returns__:
 
 MutatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and may change the object.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5216,7 +5216,7 @@ Namespace provides a scope for Names.
 
 Use of multiple namespaces is optional.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5271,7 +5271,7 @@ __Returns__:
 
 NamespaceList is a list of Namespaces.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5326,7 +5326,7 @@ __Returns__:
 
 NetworkPolicy describes what network traffic is allowed for a set of Pods.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5381,7 +5381,7 @@ __Returns__:
 
 NetworkPolicyList is a list of NetworkPolicy objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5436,7 +5436,7 @@ __Returns__:
 
 DEPRECATED 1.9 - This group version of NetworkPolicyList is deprecated by networking/v1/NetworkPolicyList. Network Policy List is a list of NetworkPolicy objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5491,7 +5491,7 @@ __Returns__:
 
 DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic is allowed for a set of Pods.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5548,7 +5548,7 @@ Node is a worker node in Kubernetes.
 
 Each node will have a unique identifier in the cache (i.e. in etcd).
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5603,7 +5603,7 @@ __Returns__:
 
 NodeList is the whole list of all Nodes which have been registered with master.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5660,7 +5660,7 @@ PersistentVolume (PV) is a storage resource provisioned by an administrator.
 
 It is analogous to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5715,7 +5715,7 @@ __Returns__:
 
 PersistentVolumeClaim is a user's request for and claim to a persistent volume.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5770,7 +5770,7 @@ __Returns__:
 
 PersistentVolumeClaimList is a list of PersistentVolumeClaim items.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5825,7 +5825,7 @@ __Returns__:
 
 PersistentVolumeList is a list of PersistentVolume items.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5882,7 +5882,7 @@ Pod is a collection of containers that can run on a host.
 
 This resource is created by clients and scheduled onto hosts.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5937,7 +5937,7 @@ __Returns__:
 
 PodDisruptionBudgetList is a collection of PodDisruptionBudgets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -5992,7 +5992,7 @@ __Returns__:
 
 PodDisruptionBudget is an object to define the max disruption that can be caused to a collection of pods.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6047,7 +6047,7 @@ __Returns__:
 
 PodList is a list of Pods.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6102,7 +6102,7 @@ __Returns__:
 
 PodPresetList is a list of PodPreset objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6157,7 +6157,7 @@ __Returns__:
 
 PodPreset is a policy resource that defines additional runtime requirements for a Pod.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6212,7 +6212,7 @@ __Returns__:
 
 PodSecurityPolicyList is a list of PodSecurityPolicy objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6267,7 +6267,7 @@ __Returns__:
 
 PodSecurityPolicy governs the ability to make requests that affect the Security Context that will be applied to a pod and container.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6322,7 +6322,7 @@ __Returns__:
 
 PodTemplate describes a template for creating copies of a predefined pod.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6377,7 +6377,7 @@ __Returns__:
 
 PodTemplateList is a list of PodTemplates.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6434,7 +6434,7 @@ PriorityClass defines mapping from a priority class name to the priority integer
 
 The value can be any valid integer.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6495,7 +6495,7 @@ __Returns__:
 
 PriorityClassList is a collection of priority classes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6550,7 +6550,7 @@ __Returns__:
 
 PriorityClassList is a collection of priority classes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6605,7 +6605,7 @@ __Returns__:
 
 PriorityClassList is a collection of priority classes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6660,7 +6660,7 @@ __Returns__:
 
 DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6721,7 +6721,7 @@ __Returns__:
 
 DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6782,7 +6782,7 @@ __Returns__:
 
 ReplicaSet ensures that a specified number of pod replicas are running at any given time.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6837,7 +6837,7 @@ __Returns__:
 
 ReplicaSetList is a collection of ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6892,7 +6892,7 @@ __Returns__:
 
 ReplicaSetList is a collection of ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -6947,7 +6947,7 @@ __Returns__:
 
 ReplicaSetList is a collection of ReplicaSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7004,7 +7004,7 @@ DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1beta2/Repl
 
 See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7061,7 +7061,7 @@ DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1/ReplicaSe
 
 See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7116,7 +7116,7 @@ __Returns__:
 
 ReplicationController represents the configuration of a replication controller.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7171,7 +7171,7 @@ __Returns__:
 
 ReplicationControllerList is a collection of replication controllers.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7226,7 +7226,7 @@ __Returns__:
 
 ResourceQuota sets aggregate quota restrictions enforced per namespace.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7281,7 +7281,7 @@ __Returns__:
 
 ResourceQuotaList is a list of ResourceQuota items.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7336,7 +7336,7 @@ __Returns__:
 
 Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7393,7 +7393,7 @@ RoleBinding references a role, but does not contain it.
 
 It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7450,7 +7450,7 @@ __Returns__:
 
 RoleBindingList is a collection of RoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7505,7 +7505,7 @@ __Returns__:
 
 RoleBindingList is a collection of RoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7560,7 +7560,7 @@ __Returns__:
 
 RoleBindingList is a collection of RoleBindings.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7617,7 +7617,7 @@ RoleBinding references a role, but does not contain it.
 
 It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7676,7 +7676,7 @@ RoleBinding references a role, but does not contain it.
 
 It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7733,7 +7733,7 @@ __Returns__:
 
 RoleList is a collection of Roles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7788,7 +7788,7 @@ __Returns__:
 
 RoleList is a collection of Roles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7843,7 +7843,7 @@ __Returns__:
 
 RoleList is a collection of Roles.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7898,7 +7898,7 @@ __Returns__:
 
 Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -7953,7 +7953,7 @@ __Returns__:
 
 Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8008,7 +8008,7 @@ __Returns__:
 
 RuntimeClassList is a list of RuntimeClass objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8063,7 +8063,7 @@ __Returns__:
 
 RuntimeClassList is a list of RuntimeClass objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8120,7 +8120,7 @@ RuntimeClass defines a class of container runtime supported in the cluster.
 
 The RuntimeClass is used to determine which container runtime is used to run all containers in a pod. RuntimeClasses are (currently) manually defined by a user or cluster provisioner, and referenced in the PodSpec. The Kubelet is responsible for resolving the RuntimeClassName reference before running the pod.  For more details, see https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8177,7 +8177,7 @@ RuntimeClass defines a class of container runtime supported in the cluster.
 
 The RuntimeClass is used to determine which container runtime is used to run all containers in a pod. RuntimeClasses are (currently) manually defined by a user or cluster provisioner, and referenced in the PodSpec. The Kubelet is responsible for resolving the RuntimeClassName reference before running the pod.  For more details, see https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8232,7 +8232,7 @@ __Returns__:
 
 Scale represents a scaling request for a resource.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8287,7 +8287,7 @@ __Returns__:
 
 represents a scaling request for a resource.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8342,7 +8342,7 @@ __Returns__:
 
 Scale represents a scaling request for a resource.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8399,7 +8399,7 @@ Secret holds secret data of a certain type.
 
 The total bytes of the values in the Data field must be less than MaxSecretSize bytes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8458,7 +8458,7 @@ __Returns__:
 
 SecretList is a list of Secret.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8515,7 +8515,7 @@ SelfSubjectAccessReview checks whether or the current user can perform an action
 
 Not filling in a spec.namespace means "in all namespaces".  Self is a special case, because users should always be able to check whether they can perform an action
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8572,7 +8572,7 @@ SelfSubjectAccessReview checks whether or the current user can perform an action
 
 Not filling in a spec.namespace means "in all namespaces".  Self is a special case, because users should always be able to check whether they can perform an action
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8629,7 +8629,7 @@ SelfSubjectRulesReview enumerates the set of actions the current user can perfor
 
 The returned list of actions may be incomplete depending on the server's authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview should be used by UIs to show/hide actions, or to quickly let an end user reason about their permissions. It should NOT Be used by external systems to drive authorization decisions as this raises confused deputy, cache lifetime/revocation, and correctness concerns. SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization decisions to the API server.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8686,7 +8686,7 @@ SelfSubjectRulesReview enumerates the set of actions the current user can perfor
 
 The returned list of actions may be incomplete depending on the server's authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview should be used by UIs to show/hide actions, or to quickly let an end user reason about their permissions. It should NOT Be used by external systems to drive authorization decisions as this raises confused deputy, cache lifetime/revocation, and correctness concerns. SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization decisions to the API server.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8741,7 +8741,7 @@ __Returns__:
 
 Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8796,7 +8796,7 @@ __Returns__:
 
 ServiceAccount binds together: * a name, understood by users, and perhaps by peripheral systems, for an identity * a principal that can be authenticated and authorized * a set of secrets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8855,7 +8855,7 @@ __Returns__:
 
 ServiceAccountList is a list of ServiceAccount objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8910,7 +8910,7 @@ __Returns__:
 
 ServiceList holds a list of services.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -8970,7 +8970,7 @@ Identities are defined as:
 - Storage: As many VolumeClaims as requested.
 The StatefulSet guarantees that a given network identity will always map to the same storage identity.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9025,7 +9025,7 @@ __Returns__:
 
 StatefulSetList is a collection of StatefulSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9080,7 +9080,7 @@ __Returns__:
 
 StatefulSetList is a collection of StatefulSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9135,7 +9135,7 @@ __Returns__:
 
 StatefulSetList is a collection of StatefulSets.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9195,7 +9195,7 @@ See the release notes for more information. StatefulSet represents a set of pods
 - Storage: As many VolumeClaims as requested.
 The StatefulSet guarantees that a given network identity will always map to the same storage identity.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9255,7 +9255,7 @@ See the release notes for more information. StatefulSet represents a set of pods
 - Storage: As many VolumeClaims as requested.
 The StatefulSet guarantees that a given network identity will always map to the same storage identity.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9310,7 +9310,7 @@ __Returns__:
 
 Status is a return value for calls that don't return other objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9373,7 +9373,7 @@ StorageClass describes the parameters for a class of storage for which Persisten
 
 StorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9440,7 +9440,7 @@ __Returns__:
 
 StorageClassList is a collection of storage classes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9495,7 +9495,7 @@ __Returns__:
 
 StorageClassList is a collection of storage classes.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9552,7 +9552,7 @@ StorageClass describes the parameters for a class of storage for which Persisten
 
 StorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9619,7 +9619,7 @@ __Returns__:
 
 SubjectAccessReview checks whether or not a user or group can perform an action.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9674,7 +9674,7 @@ __Returns__:
 
 SubjectAccessReview checks whether or not a user or group can perform an action.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9731,7 +9731,7 @@ TokenReview attempts to authenticate a token to a known user.
 
 Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9788,7 +9788,7 @@ TokenReview attempts to authenticate a token to a known user.
 
 Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9843,7 +9843,7 @@ __Returns__:
 
 ValidatingWebhookConfigurationList is a list of ValidatingWebhookConfiguration.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9898,7 +9898,7 @@ __Returns__:
 
 ValidatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and object without changing it.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -9955,7 +9955,7 @@ VolumeAttachment captures the intent to attach or detach the specified volume to
 
 VolumeAttachment objects are non-namespaced.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -10010,7 +10010,7 @@ __Returns__:
 
 VolumeAttachmentList is a collection of VolumeAttachment objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -10065,7 +10065,7 @@ __Returns__:
 
 VolumeAttachmentList is a collection of VolumeAttachment objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -10120,7 +10120,7 @@ __Returns__:
 
 VolumeAttachmentList is a collection of VolumeAttachment objects.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -10177,7 +10177,7 @@ VolumeAttachment captures the intent to attach or detach the specified volume to
 
 VolumeAttachment objects are non-namespaced.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
@@ -10234,7 +10234,7 @@ VolumeAttachment captures the intent to attach or detach the specified volume to
 
 VolumeAttachment objects are non-namespaced.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Submodule__: k8s
 
 __Extends__: [ApiObject](#cdk8s-apiobject)
