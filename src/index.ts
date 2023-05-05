@@ -23,29 +23,88 @@ export interface AnalysisSpec {
   readonly args: AnalysisArgs[];
 }
 
-// export type CanaryStep = {
-//   setWeight: number;
-// } | {
-//   pause: { duration?: string }
-// } | {
-//   setCanaryScale: {
-//     replicas: number
-//   } | {
-//     weight: number
-//   } | {
-//     matchTrafficWeight: boolean
-//   }
-// } | {
-//   analysis: AnalysisSpec
-// } | {
-//   experiment: {
-//     duration: string;
-//     templates: { name: string; specRef: string }[];
-//     analyses: { name: string; templateName: string }[];
-//   }
-// };
+export type CanaryStaticStep = 
+  {
+    setWeight: number;
+  } | 
+  {
+    pause: { 
+      duration?: string 
+    }
+  } |
+  {
+    analysis: AnalysisSpec
+  } |
+  {
+    experiment: {
+      duration: string;
+      templates: { name: string; specRef: string }[];
+      analyses: { name: string; templateName: string }[];
+    }
+  }
+      
 
-export interface BlueGreenStrategySpecs {
+export type MatchTypes =
+    {
+      exact: string
+    } |
+    {
+      regex: string;
+    } |
+    {
+      prefix: string;
+    };
+
+  
+export type CanaryDynamicStep = 
+  {
+    setCanaryScale: {
+       replicas: number
+    } | 
+    {
+       weight: number
+    } | {
+       matchTrafficWeight: boolean
+    }
+  } | 
+  {
+    setHeaderRoute: {
+      name: string;
+      match: {
+        headerName: string;
+        headerValue: MatchTypes;
+      }
+    }
+  } |
+  {
+    setMirrorRoute: {
+      name: string;
+      percentage: number;
+      match: {
+        {
+          method: MatchTypes;
+        } | 
+        {
+          path: MatchTypes;
+        } |
+        {
+          headers: {
+            [key: string]: MatchTypes;
+          }
+        }
+      }[]
+    }
+  }
+  
+
+export interface StrategySpecs {
+  readonly scaleDownDelaySeconds?: number;
+  readonly scaleDownDelayRevisionLimit?: number;
+  readonly antiAffinity?: k8s.PodAntiAffinity;
+  readonly abortScaleDownDelaySeconds?: number;
+}
+
+export interface BlueGreenStrategySpecs extends StrategySpecs {
   readonly activeService: string;
   readonly prePromotionAnalysis?: AnalysisSpec;
   readonly postPromotionAnalysis?: AnalysisSpec;
@@ -53,24 +112,26 @@ export interface BlueGreenStrategySpecs {
   readonly previewReplicaCount?: number;
   readonly autoPromotionEnabled?: boolean;
   readonly autoPromotionSeconds?: number;
-  readonly scaleDownDelaySeconds?: number;
-  readonly scaleDownDelayRevisionLimit?: number;
-  readonly antiAffinity?: k8s.PodAntiAffinity;
 }
 
-// export interface CanaryStrategySpecs {
-//   readonly canaryService: string;
-//   readonly stableService: string;
-//   readonly canaryMetadata: k8s.ObjectMeta;
-//   readonly maxUnavailable?: number;
-//   readonly maxSurge?: string;
-//   readonly analysis: AnalysisSpec;
-//   readonly steps: any[]; //TODO: add type for steps
-// }
+export interface CanaryStrategySpecs extends StrategySpecs {
+   readonly canaryService: string;
+   readonly stableService: string;
+   readonly canaryMetadata: k8s.ObjectMeta;
+   readonly stableMetadata: k8s.ObjectMeta;
+   readonly maxUnavailable?: number;
+   readonly maxSurge?: string;
+   readonly analysis?: AnalysisSpec;
+   readonly staticSteps?: CanaryStaticStep[]; //TODO: add type for steps
+   readonly TrafficRoutingParams?: {
+     dynamicSteps?: CanaryDynamicStep[];
+     nginxStableIngressNames?: string[];
+   }
+}
 
 export interface StrategySpecs {
-  readonly blueGreen: BlueGreenStrategySpecs;
-  // readonly canary?: CanaryStrategySpecs;
+  readonly blueGreen?: BlueGreenStrategySpecs;
+  readonly canary?: CanaryStrategySpecs;
 }
 
 export interface ArgoSpecs {
