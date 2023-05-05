@@ -115,7 +115,7 @@ export interface CanaryStrategySpecs extends StrategySpecs {
    readonly maxSurge?: string;
    readonly minPodsPerReplicaSet?: number;
    readonly analysis?: AnalysisSpec;
-   readonly steps?: CanaryStep[]; //TODO: add type for steps
+   readonly steps?: CanaryStep[];
    readonly TrafficRoutingParams?: {
     nginx?: {
       stableIngresses?: string[];
