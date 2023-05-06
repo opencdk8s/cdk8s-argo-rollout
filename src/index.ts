@@ -89,14 +89,14 @@ export type CanaryStep =
   }
   
 
-export interface StrategySpecs {
+export interface StrategyMutualSpecs {
   readonly scaleDownDelaySeconds?: number;
   readonly scaleDownDelayRevisionLimit?: number;
   readonly antiAffinity?: k8s.PodAntiAffinity;
   readonly abortScaleDownDelaySeconds?: number;
 }
 
-export interface BlueGreenStrategySpecs extends StrategySpecs {
+export interface BlueGreenStrategySpecs extends StrategyMutualSpecs {
   readonly activeService: string;
   readonly prePromotionAnalysis?: AnalysisSpec;
   readonly postPromotionAnalysis?: AnalysisSpec;
@@ -106,7 +106,7 @@ export interface BlueGreenStrategySpecs extends StrategySpecs {
   readonly autoPromotionSeconds?: number;
 }
 
-export interface CanaryStrategySpecs extends StrategySpecs {
+export interface CanaryStrategySpecs extends StrategyMutualSpecs {
    readonly canaryService?: string;
    readonly stableService?: string;
    readonly canaryMetadata?: k8s.ObjectMeta;
@@ -118,23 +118,38 @@ export interface CanaryStrategySpecs extends StrategySpecs {
    readonly steps?: CanaryStep[];
    readonly TrafficRoutingParams?: {
     nginx?: {
-      stableIngresses?: string[];
+      stableIngresses: string[];
       annotationPrefix?: string;
       additionalIngressAnnotations?: {
         'canary-by-header': string;
         'canary-by-header-value:': string;
       }
-     }
+    };
+    istio?: {
+      virtualServices: {
+        name: string;
+        routes: string[];
+      }[];
+    }
+    alb?: {
+      ingress: string;
+      servicePort: string;
+      annotationPrefix?: string;
+    }
+    smi?: {
+      rootService?: string;
+      trafficSplitName?: string;
+    } 
    }
 }
 
 export interface StrategySpecs {
   readonly blueGreen?: BlueGreenStrategySpecs;
-  canary?: CanaryStrategySpecs;
+  readonly canary?: CanaryStrategySpecs;
 }
 
 export interface ArgoSpecs {
-  readonly strategy: StrategySpecs;
+  strategy: StrategySpecs;
   readonly minReadySeconds?: number;
   readonly paused?: boolean;
   readonly progressDeadlineSeconds?: number;
@@ -158,6 +173,10 @@ export interface ArgoRolloutProps {
   readonly spec?: ArgoSpecs;
 }
 
+interface ArgoRolloutInternalProps extends ArgoRolloutProps {
+  spec?: ArgoSpecs;
+}
+
 export class ArgoRollout extends ApiObject {
   public static readonly GVK: GroupVersionKind = {
     apiVersion: 'argoproj.io/v1alpha1',
@@ -171,9 +190,12 @@ export class ArgoRollout extends ApiObject {
    * @param props initialization props
    */
   public static manifest(props: ArgoRolloutProps): any {
-    let rolloutProps: any = props;
+    let rolloutProps: ArgoRolloutInternalProps = props;
+    //let rolloutSpec: ArgoSpecs = rolloutProps.spec;
     if(props.spec) {
+      delete rolloutProps.spec['strategy']
       if(props.spec.strategy.canary && props.spec.strategy.blueGreen) throw new Error('Strategy can be canary or bluegreen but not both');
+      if(!props.spec.strategy.canary && !props.spec.strategy.blueGreen) throw new Error('Rollout strategy is missing. Canary or bluegreen strategy must be provided');
       if(props.spec.strategy.canary) {
         if(props.spec.strategy.canary.TrafficRoutingParams) {
           if (!props.spec.strategy.canary.canaryService) {
@@ -183,36 +205,52 @@ export class ArgoRollout extends ApiObject {
             throw new Error('When Traffic routing is configured, the property stableService is required');
           }
         }
-        rolloutProps = {
-          canary: {
-            canaryService: props.spec.strategy.canary.canaryService,
-            stableService: props.spec.strategy.canary.stableService,
-            canaryMetadata: props.spec.strategy.canary.canaryMetadata ?? {
-              annotations: {
-                role: 'canary'
+        rolloutProps.spec = {
+          ...rolloutProps.spec,
+          strategy: {
+            canary: {
+              canaryService: props.spec.strategy.canary.canaryService,
+              stableService: props.spec.strategy.canary.stableService,
+              canaryMetadata: props.spec.strategy.canary.canaryMetadata ?? {
+                annotations: {
+                  role: 'canary'
+                },
+                labels: {
+                  role: 'canary'
+                }
               },
-              labels: {
-                role: 'canary'
-              }
-            },
-            stableMetadata: props.spec.strategy.canary.stableMetadata ?? {
-              annotations: {
-                role: 'stable'
+              stableMetadata: props.spec.strategy.canary.stableMetadata ?? {
+                annotations: {
+                  role: 'stable'
+                },
+                labels: {
+                  role: 'stable'
+                }
               },
-              labels: {
-                role: 'stable'
-              }
-            },
-            maxUnavailable: props.spec.strategy.canary.maxUnavailable ?? 1,
-            maxSurge: props.spec.strategy.canary.maxSurge ?? "20%",
-            scaleDownDelaySeconds: props.spec.strategy.canary.scaleDownDelaySeconds ?? 30,
-            minPodsPerReplicaSet: props.spec.strategy.canary.minPodsPerReplicaSet ?? (props.spec.strategy.canary.TrafficRoutingParams ? 2 : 1),
-            scaleDownDelayRevisionLimit: props.spec.strategy.canary.scaleDownDelayRevisionLimit,
-            analysis: props.spec.strategy.canary.analysis,
-            steps: props.spec.strategy.canary.steps,
-            antiAffinity: props.spec.strategy.canary.antiAffinity,
-            trafficRouting: props.spec.strategy.canary.TrafficRoutingParams,
-            abortScaleDownDelaySeconds: props.spec.strategy.canary.abortScaleDownDelaySeconds ?? 30
+              maxUnavailable: props.spec.strategy.canary.maxUnavailable ?? 1,
+              maxSurge: props.spec.strategy.canary.maxSurge ?? "20%",
+              minPodsPerReplicaSet: props.spec.strategy.canary.minPodsPerReplicaSet ?? (props.spec.strategy.canary.TrafficRoutingParams ? 2 : 1),
+              analysis: props.spec.strategy.canary.analysis,
+              steps: props.spec.strategy.canary.steps,
+              trafficRouting: props.spec.strategy.canary.TrafficRoutingParams,
+              ...getStrategyMutualProps(props.spec.strategy.canary)
+            }
+          }
+        }
+      } else { // blueGreen
+        rolloutProps.spec = {
+          ...rolloutProps.spec,
+          strategy: {
+            blueGreen: {
+              activeService: props.spec.strategy.blueGreen?.activeService,
+              prePromotionAnalysis: props.spec.strategy.blueGreen?.prePromotionAnalysis,
+              postPromotionAnalysis: props.spec.strategy.blueGreen?.postPromotionAnalysis,
+              previewService: props.spec.strategy.blueGreen?.previewService,
+              previewReplicaCount: props.spec.strategy.blueGreen?.previewReplicaCount ?? 1,
+              autoPromotionEnabled: props.spec.strategy.blueGreen?.autoPromotionEnabled ?? true,
+              autoPromotionSeconds: props.spec.strategy.blueGreen?.autoPromotionSeconds,
+              ...getStrategyMutualProps(props.spec.strategy.blueGreen)
+            }
           }
         }
       }
@@ -232,5 +270,14 @@ export class ArgoRollout extends ApiObject {
    */
   public constructor(scope: Construct, id: string, props: ArgoRolloutProps) {
     super(scope, id, ArgoRollout.manifest(props));
+  }
+
+  private getStrategyMutualProps(strategyProps: BlueGreenStrategySpecs | CanaryStrategySpecs) : StrategyMutualSpecs {
+    return {
+      scaleDownDelaySeconds: strategyProps.scaleDownDelaySeconds ?? 30,
+      abortScaleDownDelaySeconds: strategyProps.abortScaleDownDelaySeconds ?? 30,
+      scaleDownDelayRevisionLimit: strategyProps.scaleDownDelayRevisionLimit,
+      antiAffinity: strategyProps.antiAffinity
+    }
   }
 }
