@@ -7,15 +7,15 @@ const project = new ConstructLibraryCdk8s({
   constructsVersion: '10.0.5',
   defaultReleaseBranch: 'master',
   stability: 'experimental',
-  jsiiFqn: 'projen.ConstructLibraryCdk8s',
+  //jsiiFqn: 'projen.ConstructLibraryCdk8s',
   name: '@opencdk8s/cdk8s-argo-rollout',
   npmAccess: 'public',
   repositoryUrl: 'https://github.com/opencdk8s/cdk8s-argo-rollout',
 
-  python: {
+  /*python: {
     distName: 'cdk8s-argo-rollout',
     module: 'cdk8s_argo_rollout',
-  },
+  },*/
   releaseEveryCommit: true,
   devDeps: [
     'prettier@^2.2.1',
@@ -27,7 +27,7 @@ const project = new ConstructLibraryCdk8s({
   },
   dependabot: false,
   pullRequestTemplate: false,
-  codeCov: true,
+  //codeCov: true,
   clobber: false,
   readme: true,
 });
